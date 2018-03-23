@@ -367,6 +367,9 @@ Vorgehen
 1. Definition der Triggerfunktion
 2. Definition des Triggers
 
+```sql
+ALTER TABLE ne_10m_admin_1_states_provinces_shp ADD COLUMN countryname varchar;
+```
 
 ```sql
 Drop FUNCTION setCountryname() CASCADE;

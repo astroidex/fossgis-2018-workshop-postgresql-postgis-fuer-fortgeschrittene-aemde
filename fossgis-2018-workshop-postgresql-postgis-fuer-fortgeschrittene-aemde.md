@@ -228,6 +228,7 @@ SELECT osm_id, access, "addr:housename", "addr:housenumber", "addr:interpolation
 EXPLAIN ANALYZE Select * from planet_osm_point_province;
 ```
 
+```sql
 "Nested Loop  (cost=100.15..870.33 rows=842 width=1313) (actual time=793.550..940.261 rows=7766 loops=1)"
 "  ->  Foreign Scan on fdw_provinces p  (cost=100.00..118.94 rows=298 width=250) (actual time=32.733..799.275 rows=3671 loops=1)"
 "  ->  Index Scan using planet_osm_point_index on planet_osm_point op  (cost=0.15..2.51 rows=1 width=1095) (actual time=0.007..0.025 rows=2 loops=3671)"

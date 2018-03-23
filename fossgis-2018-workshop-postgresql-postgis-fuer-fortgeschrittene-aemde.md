@@ -302,6 +302,12 @@ ON baum
 USING GIST (ST_Transform(geom,4326));
 ```
 
+## Typ der Spalte Geometry ändern
+```sql
+Create table provinces_germany as Select * from ne_10m_admin_1_states_provinces_shp where admin='Germany';
+
+ALTER TABLE public.provinces_germany ALTER COLUMN the_geom type geometry(multiPolygon, 25832) USING st_transform(the_geom,25832);
+```
 
 ## Thema: Funktionen
 

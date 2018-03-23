@@ -561,7 +561,8 @@ VACUUM ANALYZE;
 
 ## Thema:  Was machen die Worker in PostGIS?
 
-* Verfügbar ab PostgreSQL 9.6 für Sequenz Scans, Aggregate, Joins
+* Verfügbar ab PostgreSQL 9.6 für Sequenz Scans, Aggregate, Joins 
+* https://postgis.net/docs/manual-2.4/reference.html
 * Problem: Eine Abfrage lief bis dahin nur auf einem Prozessor
 * Untersuchungen von Paul Ramsey - siehe Blog
 * Aggregate nutzen mehrere Worker
